@@ -1,0 +1,33 @@
+:root{ 
+    /*scrollbar-face-color: red !important;*/
+    /*scrollbar-track-color: var(--nord-dark)   !important;*/
+    /*scrollbar-color: var(--nord-white) var(--nord-dark)   !important;*/
+    scrollbar-width: thin !important;
+}
+
+@-moz-document url("about:newtab"),
+url("about:home"), 
+url("about:blank") {
+    .outer-wrapper {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+    }
+}
+
+@-moz-document url("about:preferences"),
+url("about:preferences#general"),
+url("about:preferences#home"),
+url("about:preferences#search"),
+url("about:preferences#privacy"),
+url("about:preferences#sync"),
+url("about:addons"),
+url("about:profiles") {
+    * {
+        font-family: "iosevka consolas" !important;
+        font-stretch: expanded !important;
+        font-weight: normal !important;
+        font-size: 12px !important;
+    }
+}
