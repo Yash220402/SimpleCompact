@@ -57,7 +57,4 @@ url("about:profiles") {
     a {
         font-weight: bolder !important;
     }
-    #bodyContent {
-        text-align: justify !important;
-    }
 }
