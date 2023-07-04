@@ -8,12 +8,14 @@
 @-moz-document url("about:newtab"),
 url("about:home"), 
 url("about:blank") {
+
     .outer-wrapper {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
 
     }
+
 }
 
 @-moz-document url("about:preferences"),
@@ -24,10 +26,38 @@ url("about:preferences#privacy"),
 url("about:preferences#sync"),
 url("about:addons"),
 url("about:profiles") {
+
     * {
         font-family: "iosevka consolas" !important;
         font-stretch: expanded !important;
         font-weight: normal !important;
         font-size: 12px !important;
+    }
+
+}
+
+@-moz-document domain("youtube.com") {
+    #author-text {
+        background: cyan;
+        padding: 1px 5px;
+        border-radius: 0.8rem;
+    }
+
+    #author-text .ytd-comment-renderer {
+        color: black;
+        font-weight: bolder;
+    }
+
+    a.yt-simple-endpoint {
+        font-weight: bolder;
+    }
+}
+
+@-moz-document domain("wikipedia.org") {
+    a {
+        font-weight: bolder !important;
+    }
+    #bodyContent {
+        text-align: justify !important;
     }
 }
