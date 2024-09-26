@@ -1,0 +1,150 @@
+:root{
+	--toolbarbutton-border-radius: 0px !important;
+	--tab-border-radius: 0px !important;
+	--focus-outline-color: none !important;
+	--navbar-color: rgb(43, 42, 51) !important;
+}
+
+* {
+	font-family: sans-serif !important;
+	font-weight: bolder !important;
+	box-shadow: none !important;
+	font-size: 10px !important;
+}
+/*@media (-moz-platform: windows)*/
+/*:root:not([sizemode="normal"]) .titlebar-spacer[type="pre-tabs"] {
+ 	display: block !important;
+}*/
+.titlebar-spacer:first-child::after {
+	content: '<#>' !important;
+	/* font-weight: bolder !important; */
+	font-size: 1.3rem !important;
+	text-decoration: italic !important;
+	padding-left: 6px !important;
+	background: inherit !important;
+	border-radius: 3px !important;
+	color: white !important;
+	max-height: 1.4rem !important;
+	animation: 3s expression infinite !important;
+}
+
+.sidebar-panel::webkit-scrollbar {
+	width: 5px !important;
+}
+#identity-box {
+	display: none !important;
+}
+.titlebar-spacer::first-of-type {
+	display: none !important;
+}
+.tab-icon-image {
+	display: none !important;
+}
+
+/* =========== TABS ============ */
+#TabsToolbar {
+	max-height: 24px !important;
+}
+#TabsToolbar, #tabbrowser-tabs {
+    --tab-min-height: 20px !important;
+}
+.tabbrowser-tab {
+	padding: 0px !important;
+}
+.tab-close-button[selected="true"] {
+/*	color: black !important;*/
+}
+#tabs-newtab-button {
+	padding: 0px !important;
+}
+#tabs-newtab-button .toolbarbutton-icon {
+	padding: 4px !important;
+}
+.tab-close-button{
+	width: 1rem !important;
+	height: 1rem !important;
+	padding: 0px !important;
+
+	margin-inline-end: 5px !important;
+}
+
+#alltabs-button { display: none !important; }
+
+.tab-background {
+	margin: 3px 0 !important;
+	margin-block: 0 !important;
+}
+
+.tab-label-container {
+	height: 1.2rem !important;
+}
+
+/* =========== NAVBAR & URLBAR ============ */
+#nav-bar{ 
+	height: 20px !important;
+	font-size: 10px !important;
+	background:  !important;
+}
+
+#PanelUI-menu-button { display: none !important; }
+
+#back-button, #forward-button, #stop-reload-button { 
+	display: none !important;
+}
+
+#stop-reload-button, 
+#back-button, 
+#forward-button,
+#unified-extensions-button,
+#nav-bar-overflow-button,
+#page-action-buttons {
+	 display: none !important; 
+}
+
+#urlbar-background, #searchbar {
+	--toolbar-field-background-color: rgb(43, 42, 51) !important;
+}
+
+/* =========== TITLEBAR =========== */
+/*.titlebar-buttonbox {  }*/
+.titlebar-buttonbox-container { /* display: none !important; */ }
+
+#titlebar{ appearance: none !important; }
+
+.titlebar-min {
+	list-style-image: url("./square.png") !important;
+	filter: grayscale(1) !important;
+}
+.titlebar-restore {
+	list-style-image: url("./square.png") !important;
+	filter: grayscale(1) !important;
+} 
+.titlebar-max {
+	list-style-image: url("./square.png") !important;	
+	filter: grayscale(1) !important;
+}
+ .titlebar-close {
+	list-style-image: url("./square.png") !important;
+	filter: grayscale(1) !important;
+}
+
+.titlebar-button {
+	transition: all 0.3s ease !important;
+	padding: 0 10px !important;
+	background: none !important;
+}
+.titlebar-button.titlebar-close {
+	padding-right: 14px !important;
+}
+.titlebar-button > .toolbarbutton-icon {
+	transition: all 0.3s ease !important;
+/*	list-style-image: none;*/
+	border-radius: 15px;
+	width: 10px !important;
+	height: 10px !important;
+
+	opacity: 0.6 !important;
+}
+.titlebar-button:hover > .toolbarbutton-icon {
+	opacity: 1 !important;
+}

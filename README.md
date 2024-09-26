@@ -1,0 +1,2 @@
+# SimpleCompact
+![Screenshot](./Screenshot.png)

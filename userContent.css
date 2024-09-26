@@ -1,0 +1,60 @@
+:root{ 
+    /*scrollbar-face-color: red !important;*/
+    /*scrollbar-track-color: var(--nord-dark)   !important;*/
+    /*scrollbar-color: var(--nord-white) var(--nord-dark)   !important;*/
+    scrollbar-width: thin !important;
+}
+
+@-moz-document url("about:newtab"),
+url("about:home"), 
+url("about:blank") {
+
+    .outer-wrapper {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+    }
+
+}
+
+@-moz-document url("about:preferences"),
+url("about:preferences#general"),
+url("about:preferences#home"),
+url("about:preferences#search"),
+url("about:preferences#privacy"),
+url("about:preferences#sync"),
+url("about:addons"),
+url("about:profiles") {
+
+    * {
+        font-family: "iosevka consolas" !important;
+        font-stretch: expanded !important;
+        font-weight: normal !important;
+/*        font-size: 12px !important;*/
+    }
+
+}
+
+@-moz-document domain("youtube.com") {
+    #author-text {
+        background: rgb(255,255,255,0.1) !important;
+        padding: 1px 5px;
+        border-radius: 0.8rem;
+    }
+
+    #author-text .ytd-comment-renderer {
+        color: black;
+        font-weight: bolder;
+    }
+
+    a.yt-simple-endpoint {
+        font-weight: bolder;
+    }
+}
+
+@-moz-document domain("wikipedia.org") {
+    a {
+        font-weight: bolder !important;
+    }
+}
